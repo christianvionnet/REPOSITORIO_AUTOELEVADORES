@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Scania Sans Headline Bold;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: var(--scania-white);
+}
+
+/*-- COLORES --*/
+
+:root {
+  --scania-dark-grey: #53565a;
+  --scania-light-grey: #97999b;
+  --scania-white: #fafafa;
+  --scania-black: #2d2926;
+  --scania-primary-blue: #041e42;
+  --scania-secondary-blue: #05295a;
+  --scania-warning: #f2855f;
+}
+
+/*-- CONTENEDOR BODY --*/
+
+.body-container {
+  width: 100vw;
+/*
+  max-width: 1500px;
+*/
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "header" 18%
+    "main" 77%
+    "footer" 5%;
+  overflow: hidden;
+  background-color: var(--scania-primary-blue);
+  align-self: center;
+  margin: 0 auto;
+}
+
+/*-- HEADER --*/
+
+.header {
+  grid-area: header;
+  width: 100vw;
+  display: grid;
+  grid-template: ". title mobile-logo" / 10vw 80vw 10vw;
+  background-color: var(--scania-white);
+  border-bottom: 5px solid var(--scania-primary-blue);
+}
+
+
+.title {
+  grid-area: title;
+  width: 100%;
+  max-height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--scania-black);
+  font-size: 5em;
+  align-self: center;
+}
+
+
+.mobile-logo {
+  grid-area: mobile-logo;
+  width: 80%;
+  margin: auto;
+}
+
+.main {
+  height: 100%;
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 4em;
+  color: var(--scania-white);
+}
+
+.warning {
+  background-color: var(--scania-warning);
+  border-radius: 50px;
+  margin: auto 30px;
+  padding: 40px;
+ }
+
+.h2__p {
+  font-size: 20px;
+  }
